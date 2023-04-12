@@ -1,0 +1,20 @@
+
+
+
+a {
+    cursor: pointer !important;
+}
+
+.questionsHelp{
+    height: calc(100vh - 80px);
+}
+
+.card{
+
+    height: 300px;
+}
+
+#documentsContainer{
+    height: 100vh;
+    padding-top: 80px;
+}
