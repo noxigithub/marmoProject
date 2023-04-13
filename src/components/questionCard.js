@@ -17,7 +17,7 @@ const QuestionCard = (props) => {
                         <div className="card-body">
 
                             <p className="card-text">{props.question}</p>
-                            <input onKeyDown={props.keyDOWN} onKeyUp={props.keyUP} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            <input  type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                                 ref={props.reference} />
 
                         </div>

@@ -33,7 +33,7 @@ const DocumentsHome = () => {
 
 
     //Variable to check if all the questions have been answer and change enable the button
-    const [questionsDone, setquestionsDone] = useState(false);
+    const [questionsDone, setquestionsDone] = useState(true);
 
     const questions = [
         '1. Ciudad donde resides',
@@ -63,33 +63,38 @@ const DocumentsHome = () => {
 
 
     const handleRefs = (el) => {
-        console.log('Referencia changed');
         if (el && !questionsRef.current.includes(el)) {
             questionsRef.current.push(el);
         }
     }
-
+    /*
     let timer;
     const handleKeyPress = () => {
-        /*
+        
         clearTimeout(timer);
-        */
+        
     }
 
+    const handleNext = (e) =>{
+
+        e.preventDefault();
+
+    }
     const handleKeyUp = (el) => {
-        /*
+        
         clearTimeout(timer);
         timer = setTimeout(() => {
 
             setquestionValues(questionsValues => [...questionsValues, el.target.value]);
 
-            if ((questionsValues.length + 1) === 1) {
+            if (questionsValues.length >= 23) {
                 setquestionsDone(true);
             }
-
-        }, 3000);
-        */
-    }
+console.log(questionsValues);
+        }, 2000);
+        
+        
+    }*/
 
     const handleAnswers = async () => {
 
@@ -98,10 +103,12 @@ const DocumentsHome = () => {
                 setquestionValues(questionsValues => [...questionsValues, element.value])
             }
         });
-        if (questionsValues.length + 1 < 22) {
+        if (questionsValues.length < 23) {
+         
             setAlert(true);
             setTimeout(() => { setAlert(false) }, 5000);
         } else {
+           
 
             let data = {
                 'documentType': 'prescripcionPredial',
@@ -157,7 +164,7 @@ const DocumentsHome = () => {
 
 
 
-                            <div id="carouselExampleControls" className="carousel slide bg-primary" data-bs-ride="false" >
+                            <div id="carouselExampleControls" className="carousel slide bg-primary" data-bs-keyboard="true" data-bs-wrap="false" data-bs-ride="false" >
                                 <div className="carousel-inner">
 
                                     {questions.map((question, index) => {
@@ -166,8 +173,7 @@ const DocumentsHome = () => {
                                                 <QuestionCard 
                                                 questionNumber={index+1} 
                                                 totalQuestions={questions.length} 
-                                                keyDOWN={handleKeyPress} 
-                                                keyUP={handleKeyUp} 
+                                              
                                                 question={question} 
                                                 reference={handleRefs} />
                                             </div>);
@@ -178,7 +184,7 @@ const DocumentsHome = () => {
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Previous</span>
                                 </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <button className="carousel-control-next" type="button"  data-bs-target="#carouselExampleControls" data-bs-slide="next">
                                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>
