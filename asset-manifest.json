@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/marmoProject/static/css/main.7e353818.css",
-    "main.js": "/marmoProject/static/js/main.ced8bc01.js",
+    "main.js": "/marmoProject/static/js/main.af9e2245.js",
     "static/media/map-image.png": "/marmoProject/static/media/map-image.3cd6dd9808474f6ed762.png",
     "static/media/header-bg.jpg": "/marmoProject/static/media/header-bg.050c4ecaaa8ce224a5ca.jpg",
     "index.html": "/marmoProject/index.html",
     "main.7e353818.css.map": "/marmoProject/static/css/main.7e353818.css.map",
-    "main.ced8bc01.js.map": "/marmoProject/static/js/main.ced8bc01.js.map"
+    "main.af9e2245.js.map": "/marmoProject/static/js/main.af9e2245.js.map"
   },
   "entrypoints": [
     "static/css/main.7e353818.css",
-    "static/js/main.ced8bc01.js"
+    "static/js/main.af9e2245.js"
   ]
 }
