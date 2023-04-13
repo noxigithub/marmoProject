@@ -8,7 +8,11 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Home = () => {
 
-
+    const linkStyle = {
+        margin: "1rem",
+        textDecoration: "none",
+        color: 'white'
+      };
     return (
         
         <div>
@@ -72,7 +76,7 @@ const Home = () => {
                                     <div className="portfolio-hover">
                                         <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img className="img-fluid" src="img/portfolio/1.jpg" alt="..." />
+                                    <img className="img-fluid" src={process.env.PUBLIC_URL +"/img/portfolio/1.jpg"} alt="..." />
                                 </a>
                                 <div className="portfolio-caption">
                                     <div className="portfolio-caption-heading">Prescripción Predial</div>
@@ -94,7 +98,7 @@ const Home = () => {
                     </div>
                     <ul className="timeline">
                         <li>
-                            <div className="timeline-image"><img className="rounded-circle img-fluid" src="img/about/1.jpg" alt="..." /></div>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid" src={process.env.PUBLIC_URL +"/img/about/1.jpg"} alt="..." /></div>
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
                                     <h4>2009-2011</h4>
@@ -104,7 +108,7 @@ const Home = () => {
                             </div>
                         </li>
                         <li className="timeline-inverted">
-                            <div className="timeline-image"><img className="rounded-circle img-fluid" src="img/about/2.jpg" alt="..." /></div>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid" src={process.env.PUBLIC_URL +"/img/portfolio/2.jpg"} alt="..." /></div>
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
                                     <h4>March 2011</h4>
@@ -114,7 +118,7 @@ const Home = () => {
                             </div>
                         </li>
                         <li>
-                            <div className="timeline-image"><img className="rounded-circle img-fluid" src="img/about/3.jpg" alt="..." /></div>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid"src={process.env.PUBLIC_URL +"/img/portfolio/3.jpg"} alt="..." /></div>
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
                                     <h4>December 2015</h4>
@@ -124,7 +128,7 @@ const Home = () => {
                             </div>
                         </li>
                         <li className="timeline-inverted">
-                            <div className="timeline-image"><img className="rounded-circle img-fluid" src="img/about/4.jpg" alt="..." /></div>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid"src={process.env.PUBLIC_URL +"/img/portfolio/4.jpg"} alt="..." /></div>
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
                                     <h4>July 2020</h4>
@@ -157,7 +161,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="team-member">
-                                <img className="mx-auto rounded-circle" src="img/team/1.jpg" alt="..." />
+                                <img className="mx-auto rounded-circle" src={process.env.PUBLIC_URL +"/img/team/1.jpg"} alt="..." />
                                 <h4>Parveen Anand</h4>
                                 <p className="text-muted">Lead Designer</p>
                                 <a className="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i className="fab fa-twitter"></i></a>
@@ -167,7 +171,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4">
                             <div className="team-member">
-                                <img className="mx-auto rounded-circle" src="img/team/2.jpg" alt="..." />
+                                <img className="mx-auto rounded-circle" src={process.env.PUBLIC_URL +"/img/team/2.jpg"} alt="..." />
                                 <h4>Diana Petersen</h4>
                                 <p className="text-muted">Lead Marketer</p>
                                 <a className="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i className="fab fa-twitter"></i></a>
@@ -177,7 +181,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4">
                             <div className="team-member">
-                                <img className="mx-auto rounded-circle" src="img/team/3.jpg" alt="..." />
+                                <img className="mx-auto rounded-circle" src={process.env.PUBLIC_URL +"/img/team/3.jpg"} alt="..." />
                                 <h4>Larry Parker</h4>
                                 <p className="text-muted">Lead Developer</p>
                                 <a className="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i className="fab fa-twitter"></i></a>
@@ -196,16 +200,16 @@ const Home = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-3 col-sm-6 my-3">
-                            <a href="#!"><img className="img-fluid img-brand d-block mx-auto" src="img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                            <a href="#!"><img className="img-fluid img-brand d-block mx-auto" src={process.env.PUBLIC_URL +"/img/logos/microsoft.svg"}  alt="..." aria-label="Microsoft Logo" /></a>
                         </div>
                         <div className="col-md-3 col-sm-6 my-3">
-                            <a href="#!"><img className="img-fluid img-brand d-block mx-auto" src="img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                            <a href="#!"><img className="img-fluid img-brand d-block mx-auto" src={process.env.PUBLIC_URL +"/img/logos/google.svg"}  alt="..." aria-label="Google Logo" /></a>
                         </div>
                         <div className="col-md-3 col-sm-6 my-3">
-                            <a href="#!"><img className="img-fluid img-brand d-block mx-auto" src="img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                            <a href="#!"><img className="img-fluid img-brand d-block mx-auto" src={process.env.PUBLIC_URL +"/img/logos/facebook.svg"}  alt="..." aria-label="Facebook Logo" /></a>
                         </div>
                         <div className="col-md-3 col-sm-6 my-3">
-                            <a href="#!"><img className="img-fluid img-brand d-block mx-auto" src="img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                            <a href="#!"><img className="img-fluid img-brand d-block mx-auto"  src={process.env.PUBLIC_URL +"/img/logos/ibm.svg"}  alt="..." aria-label="IBM Logo" /></a>
                         </div>
                     </div>
                 </div>
@@ -283,7 +287,7 @@ const Home = () => {
             <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <div className="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                        <div className="close-modal" data-bs-dismiss="modal"><img src={process.env.PUBLIC_URL +"/img/close-icon.svg"} alt="Close modal" /></div>
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-8">
@@ -291,7 +295,7 @@ const Home = () => {
 
                                         <h2 className="text-uppercase">Prescripción Predial</h2>
                                         <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                        <img className="img-fluid d-block mx-auto" src="img/portfolio/1.jpg" alt="..." />
+                                        <img className="img-fluid d-block mx-auto" src={process.env.PUBLIC_URL +"/img/portfolio/1.jpg"} alt="..." />
                                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                         <ul className="list-inline">
                                             {/*
@@ -305,8 +309,7 @@ const Home = () => {
                                             </li>
                                         </ul>
                                         <button className="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" >
-                                            
-                                             <Link to='/documents'>Obtener</Link>
+                                             <Link to='/documents' style={linkStyle}>Obtener</Link>
                                         </button>
                                     </div>
                                 </div>
