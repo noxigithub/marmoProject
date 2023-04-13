@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import axios from 'axios';
 import { LoginContext } from '../helpers/context';
+import { Link } from "react-router-dom";
 
 
 const NavBar = (props) => {
@@ -38,7 +39,7 @@ const NavBar = (props) => {
 
 <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div className="container">
-                <a className="navbar-brand" href={props.origin=="documents"? "/": "#page-top"}>DOCSales</a>
+                <a className="navbar-brand"><Link to={props.origin=="documents"? "/": "#page-top"}>DOCSales</Link></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i className="fas fa-bars ms-1"></i>
@@ -58,7 +59,7 @@ const NavBar = (props) => {
                             
                             </li>
                             <li> 
-                                 {!connected &&<a className="nav-link" href="/login" >iniciar Sesion</a>}</li>
+                                 {!connected &&<a className="nav-link" ><Link to="/login">iniciar Sesion</Link> </a>}</li>
                             <li> 
                                  {connected &&<a className="nav-link" onClick={handleLogout} >Cerrar Sesion</a>}</li>
                         </ul>

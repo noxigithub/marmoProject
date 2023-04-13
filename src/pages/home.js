@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import '../css/style.css';
 import '../css/home.css';
 import Navbar from './navBar.js';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
@@ -306,7 +306,7 @@ const Home = () => {
                                         </ul>
                                         <button className="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" >
                                             
-                                             <a href='/documents'>Obtener</a>
+                                             <Link to='/documents'>Obtener</Link>
                                         </button>
                                     </div>
                                 </div>
