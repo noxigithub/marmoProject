@@ -15,7 +15,7 @@ function App() {
   return (
     <LoginContext.Provider value={{connected,setConnected}}>
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/marmoProject'>
         <Routes> 
           <Route path="/" element= { <Home /> }/> 
           <Route path="/login" element={ <LoginForm /> }/>
