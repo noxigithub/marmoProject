@@ -108,7 +108,7 @@ const Home = () => {
                             </div>
                         </li>
                         <li className="timeline-inverted">
-                            <div className="timeline-image"><img className="rounded-circle img-fluid" src={process.env.PUBLIC_URL +"/img/portfolio/2.jpg"} alt="..." /></div>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid" src={process.env.PUBLIC_URL +"/img/about/2.jpg"} alt="..." /></div>
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
                                     <h4>March 2011</h4>
@@ -118,7 +118,7 @@ const Home = () => {
                             </div>
                         </li>
                         <li>
-                            <div className="timeline-image"><img className="rounded-circle img-fluid"src={process.env.PUBLIC_URL +"/img/portfolio/3.jpg"} alt="..." /></div>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid"src={process.env.PUBLIC_URL +"/img/about/3.jpg"} alt="..." /></div>
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
                                     <h4>December 2015</h4>
@@ -128,7 +128,7 @@ const Home = () => {
                             </div>
                         </li>
                         <li className="timeline-inverted">
-                            <div className="timeline-image"><img className="rounded-circle img-fluid"src={process.env.PUBLIC_URL +"/img/portfolio/4.jpg"} alt="..." /></div>
+                            <div className="timeline-image"><img className="rounded-circle img-fluid"src={process.env.PUBLIC_URL +"/img/about/4.jpg"} alt="..." /></div>
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
                                     <h4>July 2020</h4>
