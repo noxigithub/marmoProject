@@ -116,7 +116,7 @@ console.log(questionsValues);
             };
             console.log(data);
             try {
-                const res = await axios.post("http://localhost/marmoProject/backend/documents/docsController.php",data,{
+                const res = await axios.post("https://jsgdproyects.000webhostapp.com/backend/documents/docsController.php",data,{
                     responseType: 'arraybuffer',
                     headers: {
                         'Content-Type': 'application/json',
